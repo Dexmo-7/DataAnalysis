@@ -51,4 +51,13 @@ yarr = np.array([2.1, 2.2, 2.3, 2.4, 2.5])
 cond = np.array([True, False, True, True, False])
 
 result = np.where(cond, xarr, yarr)
-print(result)
+print(result, "\n")
+
+# matrix for mean and max methods - matB 3x4
+matB = np.array([[10, 4, 2, 5], [4, 2, 1, 1], [3, 2, 7, 9]])
+print(matB)
+# mean of axis=0 (sum to "up" -> we've got row, in this case we'll obtain 4 values)
+# mean of axis=1 (sum to "left" -> we've got column, in this case we'll obtain 3 values)
+print("\nMean of matB:\n", np.mean(matB))
+print("\nMean of matB axis 0\n", np.mean(matB, axis=0))
+print("\nMean of matB axis 1\n", np.mean(matB, axis=1))
