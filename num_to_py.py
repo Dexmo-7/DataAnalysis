@@ -25,5 +25,17 @@ print("\n")
 print(arr[[2, 4, 1, 0]])
 print("\n")
 
-arr1 = np.arange().reshape(4, 16)
+arr1 = np.arange(64).reshape(4, 16)
 print(arr1)
+
+tabA = np.arange(8).reshape(2, 4)
+tabB = np.random.randn(8).reshape(4, 2)
+tabAtrans = tabA.T
+print(tabA)
+print(tabB)
+print(tabAtrans)
+
+new_data1 = np.dot(tabAtrans, tabA)
+
+print("\n")
+print(new_data1)
